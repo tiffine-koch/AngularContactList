@@ -2,7 +2,7 @@
 
 console.log('main js');
 
-var app = angular.module('MyApp', ['ngStorage']); //instantiating new module named 'myapp'
+var app = angular.module('MyApp', ['ngStorage']);
 
 app.controller('mainCtrl', function($scope, $localStorage) {
   $scope.storage = $localStorage;
@@ -21,7 +21,6 @@ app.controller('mainCtrl', function($scope, $localStorage) {
     $scope.contacts.push($scope.newContact);
     $scope.contacts = $localStorage.localArray;
     $scope.newContact = {};
-    // $scope.newContact = '';
   };
 
   $scope.removeContact = function(contact) {
@@ -33,8 +32,8 @@ app.controller('mainCtrl', function($scope, $localStorage) {
     console.log(newContact);
     $scope.contacts.push($scope.newContact);
     $scope.contacts = $localStorage.localArray;
-    $scope.newContact = {};
-    // var index = $scope.contacts.indexOf(newContact);
+    // $scope.newContact = {};
+    // var index = $scope.contacts.indexOf(contact);
     // $scope.contacts.splice(index, 1);
   };
 });

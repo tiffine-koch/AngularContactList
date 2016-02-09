@@ -1,0 +1,19 @@
+body {
+  background-image: url(teacups.jpg);
+  background-size: cover;
+  background-position: top right;
+  background-position-x: 100%
+  background-position-y: 0%;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: #ff33cc;
+  font-style: italic;
+  font-weight: bold;
+}
+
+label {
+  color: #ff33cc;
+  font-weight: bold;
+}
